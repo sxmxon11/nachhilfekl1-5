@@ -1,1 +1,133 @@
-<h1>Test eif nig</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nachhilfe von Christian</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Comic Neue', cursive, sans-serif;
+    background: linear-gradient(135deg, #ffefba, #ffffff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+  header {
+    background: #ffb347;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 25px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 18px rgba(255, 179, 71, 0.5);
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+    overflow: visible;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #8b3e00;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #e07b00;
+  }
+  header::before {
+    content: "📚✏️";
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 2.5rem;
+    animation: bounce 2s infinite ease-in-out;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  main {
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px 35px 50px;
+    transition: transform 0.3s ease;
+  }
+  main:hover {
+    transform: scale(1.03);
+  }
+  section {
+    margin-bottom: 35px;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #ff8c00;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #ffcc80;
+    padding-bottom: 8px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  .contact {
+    background: #ffe0b2;
+    border-radius: 25px;
+    padding: 25px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #d84315;
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .contact a {
+    color: #d84315;
+    text-decoration: none;
+  }
+  .contact:hover {
+    background-color: #ffb74d;
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.5);
+  }
+  footer {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #777;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Nachhilfe von Christian</h1>
+</header>
+<main>
+  <section>
+    <h2>Über Christian 😊</h2>
+    <p>Christian ist 12 Jahre alt und besucht die 7. Klasse am Gymnasium in Auenwald. Er liebt es, anderen zu helfen und gemeinsam Neues zu lernen!</p>
+  </section>
+  <section>
+    <h2>Nachhilfeangebot 📚</h2>
+    <p>Christian gibt Nachhilfe für Schülerinnen und Schüler der 7. Klasse. Besonders in den Fächern, die er selbst am Gymnasium lernt, unterstützt er dich gern.</p>
+  </section>
+  <section class="contact" tabindex="0" role="button" aria-label="Ruf Christian an unter +49 1516 1495919">
+    <h2>Kontakt ☎️</h2>
+    <p>Telefon: <a href="tel:+4915161495919">+49 1516 1495919</a></p>
+  </section>
+</main>
+<footer>
+  &copy; 2025 Nachhilfe Christian, Auenwald
+</footer>
+</body>
+</html>
